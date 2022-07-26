@@ -6,8 +6,22 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import './CountrySelect'
 import CountrySelect from './CountrySelect';
+import Box from '@mui/material/Box';
+import FormControl from '@mui/material/FormControl';
+import FormGroup from '@mui/material/FormGroup';
+import FormHelperText from '@mui/material/FormHelperText';
+import FormLabel from '@mui/material/FormLabel';
+import './Ship.js';
+import Link from '@mui/material/Link';
+
+
+
+
+
+
 
 export default function AddressForm() {
+  
   return (
     <React.Fragment>
       <Typography variant="h5" gutterBottom>
@@ -93,10 +107,26 @@ export default function AddressForm() {
         </Grid>
         <Grid item xs={12}>
           <FormControlLabel
-            control={<Checkbox color="secondary" name="saveAddress" value="yes" />}
-            label="Use this address for payment details"
+            control={<Checkbox color="primary" name="saveAddress" value="yes" />}
+            label="Use this as the billing address"
           />
         </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h5">Choose Shipping Method:</Typography>
+        </Grid>
+        <Grid item xs={12}> 
+         <Link href="./Ship.js">
+          Here
+         </Link>
+          
+        </Grid>
+        <Grid item xs={12}>
+        
+          
+        </Grid>
+        
+       
+
       </Grid>
     </React.Fragment>
   );

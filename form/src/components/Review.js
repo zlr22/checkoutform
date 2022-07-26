@@ -7,6 +7,9 @@ import Grid from '@mui/material/Grid';
 import { ImageList } from '@mui/material';
 import ImageListItem from '@mui/material/ImageList';
 import itemData from '@mui/material/ImageList';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
+
 
 
 const products = [
@@ -35,17 +38,17 @@ const products = [
 
 const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
 const payments = [
-  { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
-  { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Expiry date', detail: '04/2024' },
+  { name: 'Card type:', detail: 'Visa' },
+  { name: 'Card holder:', detail: 'John Smith' },
+  { name: 'Card #:', detail: 'xxxx-xxxx-xxxx-1234' },
+  { name: 'Expiration date:', detail: '04/2024' },
 ];
 
 export default function Review() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Order summary
+        Order Summary
       </Typography>
       <List disablePadding>
         {products.map((product) => (

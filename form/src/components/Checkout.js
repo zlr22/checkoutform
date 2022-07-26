@@ -15,6 +15,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import Alert from '@mui/material/Alert';
+import AlertTitle from '@mui/material/AlertTitle';
 
 function Copyright() {
   return (
@@ -29,7 +31,7 @@ function Copyright() {
   );
 }
 
-const steps = ['Shipping Address', 'Payment Details', 'Review Your Order'];
+const steps = ['Shipping', 'Payment Details','Review Your Order'];
 
 function getStepContent(step) {
   switch (step) {
@@ -99,7 +101,7 @@ export default function Checkout() {
             {activeStep === steps.length ? (
               <React.Fragment>
                 <Typography variant="h5" gutterBottom>
-                  Thank you for your order.
+                  Thank you for shopping with Apple.
                 </Typography>
                 <Typography variant="subtitle1">
                   Your order number is #9001539. We have emailed your order
@@ -107,7 +109,7 @@ export default function Checkout() {
                 
                 </Typography>
                 <Link href="https://www.apple.com">
-                  Home
+                  Back to Home
         
                 </Link>
               </React.Fragment>
