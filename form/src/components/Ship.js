@@ -28,24 +28,24 @@ export default function CheckboxesGroup() {
     <Box sx={{ display: 'flex' }}>
       <FormControl
         required
-        error={error}
+        
         component="fieldset"
-        sx={{ m: 3 }}
+        sx={{ m: 10 }}
         variant="standard"
       >
-        <FormLabel component="legend">Pick One</FormLabel>
+        
         <FormGroup>
           <FormControlLabel
             control={
-              <Checkbox checked={Standard} onChange={handleChange} name="standard" />
+              <Checkbox  onChange={handleChange} name="standard" />
             }
             label="Standard(+$0.00, will arrive in 2-3 days.)"
           />
           <FormControlLabel
             control={
-              <Checkbox checked={Express} onChange={handleChange} name="express" />
+              <Checkbox  onChange={handleChange} name="express" />
             }
-            label="Express(+35.00, will arrive beteween today and tommorow)"
+            label="Express(+35.00, will arrive in < 2 days.)"
           />
           
           

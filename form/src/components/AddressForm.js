@@ -11,7 +11,7 @@ import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormLabel from '@mui/material/FormLabel';
-import './Ship.js';
+import Ship from './Ship.js';
 import Link from '@mui/material/Link';
 
 
@@ -36,7 +36,7 @@ export default function AddressForm() {
             label="First Name"
             fullWidth
             autoComplete="given-name"
-            variant="standard"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -47,7 +47,7 @@ export default function AddressForm() {
             label="Last Name"
             fullWidth
             autoComplete="family-name"
-            variant="standard"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12}>
@@ -58,7 +58,7 @@ export default function AddressForm() {
             label="Address Line 1"
             fullWidth
             autoComplete="shipping address-line1"
-            variant="standard"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12}>
@@ -68,7 +68,7 @@ export default function AddressForm() {
             label="Address Line 2"
             fullWidth
             autoComplete="shipping address-line2"
-            variant="standard"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -79,16 +79,17 @@ export default function AddressForm() {
             label="City"
             fullWidth
             autoComplete="shipping address-level2"
-            variant="standard"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
+            required
             id="state"
             name="state"
             label="State/Province/Region"
             fullWidth
-            variant="standard"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -99,7 +100,7 @@ export default function AddressForm() {
             label="Zip/Postal Code"
             fullWidth
             autoComplete="shipping postal-code"
-            variant="standard"
+            variant="outlined"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
@@ -115,9 +116,7 @@ export default function AddressForm() {
           <Typography variant="h5">Choose Shipping Method:</Typography>
         </Grid>
         <Grid item xs={12}> 
-         <Link href="./Ship.js">
-          Here
-         </Link>
+         <Ship></Ship>
           
         </Grid>
         <Grid item xs={12}>
